@@ -1,15 +1,15 @@
-//3
+
 let buffer = '0';
 let runningtotal= 0;
 let previousoperator = null;
 
-//6
+
 const screen = document.querySelector(".screen");
 
-//5
+
 function buttonclick(value)    //parseInt() is a function
 { if(isNaN(parseInt(value)))  //isNaN() is a function 
-   {                          //nan=not a number
+   {                          
     handlesymbol(value);
    }else
    {
@@ -31,7 +31,7 @@ function handlenumber(number)
 }
 }
 
-//4
+
 function handlesymbol(symbol)
 {    switch(symbol) {
        case 'AC':
@@ -112,7 +112,7 @@ function rerender ()
     screen.innerText = buffer;
 }
 
-   //1
+   
   function init () {
     document.querySelector(".container")
     .addEventListener("click", function(event){
@@ -121,7 +121,7 @@ function rerender ()
     });
 }
 
-//2
+
 init ();
 
 const button = true;
