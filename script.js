@@ -106,7 +106,7 @@ runningtotal = runningtotal % intbuffer
 }
 }
 
-//6
+
 function rerender ()
 {
     screen.innerText = buffer;
